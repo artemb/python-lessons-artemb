@@ -25,6 +25,30 @@ X     X
 X   X X
 X   X X
 XXXXXXX
+""", """
+XXXXXXX
+X     X
+XXX   X
+X     X
+X   XXX
+X     X
+XXXXXXX
+""", """
+XXXXXXX
+X     X
+XXXX  X
+X     X
+X  XXXX
+X     X
+XXXXXXX
+""", """
+XXXXXXX
+X X   X
+X X X X
+X X X X
+X X X X
+X   X X
+XXXXXXX
 """
          ]
 
