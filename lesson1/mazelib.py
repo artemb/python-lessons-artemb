@@ -42,6 +42,26 @@ X  XXXX
 X     X
 XXXXXXX
 """, """
+XXXXXXXXX
+X X  X  X
+X   X X X
+X X     X
+X   X   X
+X X     X
+X  X  X X
+X X     X
+XXXXXXXXX
+""", """
+XXXXXXXXX
+X X  X  X
+X   X X X
+X X   X X
+X   X   X
+X X  X  X
+X  X  X X
+X X  X  X
+XXXXXXXXX
+""", """
 XXXXXXX
 X X   X
 X X X X
@@ -98,6 +118,14 @@ class MazeTurtle(Turtle):
         self.shapesize(2, 2, 1)
         self.pendown()
         self.speed('slowest')
+
+        # Key bindings
+        self.screen.listen()
+        self.screen.onkey(self.step_up, "Up")
+        self.screen.onkey(self.step_right, "Right")
+        self.screen.onkey(self.step_down, "Down")
+        self.screen.onkey(self.step_left, "Left")
+
 
     def step_up(self):
         self._turn_and_move(90)
