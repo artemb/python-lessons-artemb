@@ -61,14 +61,6 @@ X X  X  X
 X  X  X X
 X X  X  X
 XXXXXXXXX
-""", """
-XXXXXXX
-X X   X
-X X X X
-X X X X
-X X X X
-X   X X
-XXXXXXX
 """
          ]
 
