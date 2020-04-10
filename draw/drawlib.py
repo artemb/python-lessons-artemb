@@ -1,10 +1,11 @@
 from turtle import Screen, Turtle
 
+
 def set_up_axis():
     s = Screen()
     s.setup(700, 700)
     axis_drawer = Turtle()
-    axis_drawer.color('gray')
+    axis_drawer.color('#A4AEF3')
     axis_drawer.speed('fastest')
     axis_drawer.penup()
     axis_drawer.goto(- s.window_width() / 2 + 30, 0)
