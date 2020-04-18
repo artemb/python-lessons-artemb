@@ -1,19 +1,20 @@
 from turtle import Screen, Turtle
 
 
-def new_shape(x, y, color):
+def new_shape(x, y, color, speed='slowest'):
     t = Turtle()
     t.penup()
     t.goto(x, y)
     t.color(color)
     t.pendown()
-    t.speed('slowest')
+    t.speed(speed)
     return t
 
 
-def set_up(axis=True):
+def set_up(axis=True, bgcolor='white'):
     s = Screen()
     s.setup(700, 700)
+    s.bgcolor(bgcolor)
     if axis:
         axis_drawer = Turtle()
         axis_drawer.color('#A4AEF3')
