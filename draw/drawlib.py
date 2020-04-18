@@ -1,6 +1,16 @@
 from turtle import Screen, Turtle
 
 
+def new_shape(x, y, color):
+    t = Turtle()
+    t.penup()
+    t.goto(x, y)
+    t.color(color)
+    t.pendown()
+    t.speed('slowest')
+    return t
+
+
 def set_up(axis=True):
     s = Screen()
     s.setup(700, 700)
