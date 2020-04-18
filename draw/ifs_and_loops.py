@@ -1,7 +1,7 @@
 from turtle import Turtle
-from draw.drawlib import set_up_axis
+from draw.drawlib import set_up
 
-s = set_up_axis()
+s = set_up(axis=True)
 
 t = Turtle()
 
