@@ -8,3 +8,4 @@
 #   If the number is correct, the program tells the user how many steps
 #       they used to guess the number.
 
+from random import randint
