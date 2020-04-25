@@ -1,8 +1,5 @@
 from turtle import Screen, Turtle
 
-from numpy.random.mtrand import randint
-
-
 def new_shape(x, y, color, speed='slowest'):
     t = Turtle()
     t.penup()
