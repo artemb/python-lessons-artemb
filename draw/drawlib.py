@@ -1,5 +1,7 @@
 from turtle import Screen, Turtle
 
+from numpy.random.mtrand import randint
+
 
 def new_shape(x, y, color, speed='slowest'):
     t = Turtle()
@@ -9,6 +11,16 @@ def new_shape(x, y, color, speed='slowest'):
     t.pendown()
     t.speed(speed)
     return t
+
+
+prev_color = 0
+
+
+def next_color():
+    global prev_color
+    colors = ['#f45905', '#c70d3a', '#512c62', '#45969b']
+    prev_color += 1
+    return colors[prev_color % len(colors)]
 
 
 def set_up(axis=True, bgcolor='white'):
