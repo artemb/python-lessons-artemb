@@ -7,7 +7,7 @@ current_color = 0
 
 def next_color():
     global current_color
-    result = colors[current_color]
+    result = colors[current_color % len(colors)]
     current_color += 1
     return result
 
